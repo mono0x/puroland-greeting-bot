@@ -1,0 +1,19 @@
+hash: 3566dd8a2273094a714dd882f179163e8564a869f32ded63e85d53b5f528e7b5
+updated: 2017-05-17T23:42:53.493567367+09:00
+imports:
+- name: github.com/joho/godotenv
+  version: 726cc8b906e3d31c70a9671c90a13716a8d3f50d
+- name: github.com/lestrrat/go-server-starter
+  version: 88699d57aeee0276b4198e135883ff24b88a742f
+  subpackages:
+  - listener
+- name: github.com/line/line-bot-sdk-go
+  version: 3a7d66f5efce6ac202f650134609f9d6d163a640
+  subpackages:
+  - linebot
+- name: golang.org/x/net
+  version: 5916dcb167ed985a5b9e6871fbfd74848a4c170b
+  subpackages:
+  - context
+  - context/ctxhttp
+testImports: []
