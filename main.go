@@ -83,6 +83,9 @@ func (a *todayScheduleAction) Execute() ([]linebot.Message, error) {
 		}
 
 		text += fmt.Sprintf("%s-%s %s\n", startAt.Format("15:04"), endAt.Format("15:04"), greeting.Place.Name)
+		sort.Slice(greeting.Characters, func(i, j int) bool {
+			return strings.Compare(greeting.Characters[i].Name, greeting.Characters[j].Name) <= 0
+		})
 		for i, character := range greeting.Characters {
 			if i != 0 {
 				text += "\n"
